@@ -1,0 +1,7 @@
+.col-elements{
+    display: flex;
+}
+
+.col-elements > *{
+    margin:0 8px;
+}
