@@ -2,6 +2,8 @@
 
 ### 文件结构
 
-### 启动方式
+### 安装 & 启动
 
-storybool ``
+- 安装依赖 `yarn install`
+
+- 项目启动 `yarn start` or `yarn run storybook`
