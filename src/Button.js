@@ -1,18 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledButton = styled.div`
-  width: ${({ width }) => width || "80px" };
+  width: ${({ width }) => width || "80px"};
+  background-color: ${({ theme }) => theme.primaryColor};
+`;
 
-  button{
-    width:100%;
-  }
-`
-
-function Button({ width, lable }) {
+function Button({ width, onClick, label, children }) {
   return (
-    <StyledButton width={width}>
-      <button>{lable}</button>
+    <StyledButton width={width} onClick={onClick}>
+      <button>{label}</button>
+      {children}
     </StyledButton>
   );
 }

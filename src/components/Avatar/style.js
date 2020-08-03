@@ -1,7 +1,7 @@
-import styled,{ css } from 'styled-components';
+import styled, { css } from "styled-components";
 import { circle } from "utils/mixins";
 
-const circleMixinFunc = (color, size = '8px') => css`
+const circleMixinFunc = (color, size = "8px") => css`
   content: "";
   display: block;
   position: absolute;
@@ -17,24 +17,25 @@ const StatusIcon = styled.div`
   left: 2px;
   top: 4px;
 
-  &::before{
-    ${({size}) => circleMixinFunc('white', size)}
+  &::before {
+    ${({ size }) => circleMixinFunc("white", size)}
+
     transform: scale(2);
   }
 
-  &::after{
+  &::after {
     ${({ theme, status, size }) => {
-      if(status === 'online'){
-        return circleMixinFunc(theme.green, size)
-      }else if(status === 'offline'){
-        return circleMixinFunc(theme.gray, size)
+      if (status === "online") {
+        return circleMixinFunc(theme.green, size);
+      } else if (status === "offline") {
+        return circleMixinFunc(theme.gray, size);
       }
     }}
   }
 `;
 
 const AvatarClip = styled.div`
-  width:  ${({ size }) => size};
+  width: ${({ size }) => size};
   height: ${({ size }) => size};
   border-radius: 50%;
   overflow: hidden;
