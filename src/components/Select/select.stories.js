@@ -4,7 +4,7 @@ import Select from ".";
 import Option from 'components/Option'
 
 export default {
-  title: "UI组件/Input/Select",
+  title: "UI 组件/Input/Select",
   component: Select
 };
 
