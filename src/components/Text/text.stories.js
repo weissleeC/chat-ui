@@ -2,7 +2,7 @@ import React from "react";
 import Text from ".";
 
 export default {
-  title: "排版组件/Text",
+  title: "排版/Text",
   component: Text,
 };
 

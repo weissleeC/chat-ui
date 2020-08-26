@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as SmileIcon } from "assets/icons/smile.svg";
 
 export default {
-  title: "UI 组件/Icon",
+  title: "UI组件/Icon",
   component: Icon,
 };
 

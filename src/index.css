@@ -24,6 +24,6 @@ code {
 
 input,
 button,
-select{
-  outline: 0;
+select {
+  outline: none;
 }

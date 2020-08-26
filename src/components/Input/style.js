@@ -1,16 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledInput = styled.input`
-  display: block;
-  box-sizing: border-box;
   width: 100%;
-  height: 34px;
+  height: 48px;
   border: none;
   background: none;
-  color: ${ ({theme}) => theme.grayDark };
-  font-size: ${ ({theme}) => theme.medium };
-  &::placeholder{
-    color: ${ ({theme}) => theme.gray3 };
+  color: ${({ theme }) => theme.grayDark};
+  font-size: ${({ theme }) => theme.medium};
+  display: block;
+  &::placeholder {
+    color: ${({ theme }) => theme.gray3};
   }
 `;
 
@@ -25,10 +24,10 @@ const Suffix = styled.div`
 const InputContainer = styled.div`
   display: flex;
   align-items: center;
-  background: ${ ({theme}) => theme.gray2 };
+  background: ${({ theme }) => theme.gray2};
   border-radius: 24px;
   padding: 0 30px;
 `;
 
 export default StyledInput;
-export { Prefix, Suffix, InputContainer };
+export { InputContainer, Prefix, Suffix };
