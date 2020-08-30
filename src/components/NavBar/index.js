@@ -15,8 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "styled-components/macro";
-
-import { BrowserRouter as Router, Link, useLocation, matchPath  } from "react-router-dom";
+import { Link, useLocation, matchPath } from "react-router-dom";
 
 function NavBar({ ...rest }) {
   return (

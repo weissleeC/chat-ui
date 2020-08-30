@@ -82,7 +82,7 @@ function EditProfile({ children, ...rest }) {
       </GenderAndRegion>
       <InputText label="个性签名" />
 
-      <GroupTitle>联系信息</GroupTitle>
+      <GroupTitle>联系信息 11</GroupTitle>
       <InputText label="联系电话" />
       <InputText label="电子邮箱" />
       <InputText label="个人网站" />
